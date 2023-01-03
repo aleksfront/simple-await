@@ -1,0 +1,24 @@
+{
+  "name": "simple-await",
+  "version": "1.0.0",
+  "description": "Executing async function with simple error handling. Returns tuple with response and error.",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn jest"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "error",
+    "handling",
+    "ts",
+    "promise",
+    "try-catch"
+  ],
+  "author": "aleksfront",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "typescript": "^4.9.4"
+  }
+}
