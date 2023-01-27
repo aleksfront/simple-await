@@ -1,8 +1,4 @@
-function to<T, E = any>(promise: Promise<T>) {
-  return toArray<T, E>(promise);
-}
-
-function toArray<T, E = any>(promise: Promise<T>): Promise<[error: E, data: Awaited<T> | undefined]> {
+function wait<T, E = any>(promise: Promise<T>): Promise<{ error: E, data: Awaited<T> | undefined }> {
   return Promise.allSettled([promise]).then(function ([result]) {
     let data: Awaited<T> | undefined;
     let error: E | any;
@@ -13,8 +9,8 @@ function toArray<T, E = any>(promise: Promise<T>): Promise<[error: E, data: Awai
       error = result.reason;
     }
 
-    return [error, data];
+    return { error, data };
   });
 }
 
-export default to;
+export default wait;
