@@ -1,3 +1,5 @@
+![simple-await handwritten logo](./simple-await.svg)
+
 # simple-await
 Execute async function with simple error handling. Returns object with data and error.
 
@@ -36,6 +38,10 @@ async function reject() {
     console.log(result, cause) // undefined, my new error
 }
 ```
+
+## Note
+
+Simple-await uses `Promise.allSettled()` under the hood. Please check [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) for browser compatibility. Also, note that `tsconfig` configured to target es2020. Please let me know if you need to change it or support some older broswer versions.
 
 ## License
 MIT
