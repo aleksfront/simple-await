@@ -1,6 +1,6 @@
 {
   "name": "simple-await",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Executing async function with simple error handling. Returns object with data and error.",
   "scripts": {
     "build": "tsc && rollup -c && rimraf compiled",
