@@ -1,6 +1,6 @@
 {
   "name": "simple-await",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Executing async function with simple error handling. Returns object with data and error.",
   "scripts": {
     "build": "tsc && rollup -c && rimraf compiled",
@@ -17,6 +17,11 @@
   ],
   "author": "aleksfront",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleksfront/simple-await.git"
+  },
+  "homepage": "https://github.com/aleksfront/simple-await",
   "type": "module",
   "main": "dist/simple-await.umd.js",
   "module": "dist/simple-await.es5.js",
